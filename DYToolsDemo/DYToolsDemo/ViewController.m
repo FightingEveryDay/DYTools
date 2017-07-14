@@ -18,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSString *string = @"123";
-    NSLog(@"append -> %@",[string append:@"456"]);
-    NSLog(@"replace -> %@", [string replace:@"2" v:@"4"]);
+    NSLog(@"append -> %@",[string dy_append:@"456"]);
+    NSLog(@"replace -> %@", [string dy_replace:@"2" v:@"4"]);
+    UIColor *hexColor = [UIColor dy_colorWithHexString:@""];
 }
 
 @end
