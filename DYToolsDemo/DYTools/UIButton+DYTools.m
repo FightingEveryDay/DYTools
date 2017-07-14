@@ -8,16 +8,16 @@
 
 @implementation UIButton (DYTools)
 static char Action;
-- (void)addClick:(void(^)(UIButton *button))block {
+- (void)dy_addClick:(void(^)(UIButton *button))block {
     [self addAction:block action:UIControlEventTouchUpInside];
 }
-- (void)addAction:(ButtonClick)block action:(UIControlEvents)events {
+- (void)addAction:(DY_ButtonClick)block action:(UIControlEvents)events {
     objc_setAssociatedObject(self, &Action, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
     [self addTarget:self action:@selector(buttonClick:) forControlEvents:events];
 }
 
 - (void)buttonClick:(UIButton *)sender {
-    ButtonClick buttonClick = objc_getAssociatedObject(self, &Action);
+    DY_ButtonClick buttonClick = objc_getAssociatedObject(self, &Action);
     if (buttonClick) buttonClick(self);
 }
 @end

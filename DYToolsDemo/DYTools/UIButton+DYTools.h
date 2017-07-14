@@ -4,14 +4,14 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void(^ButtonClick)(UIButton *button);
+typedef void(^DY_ButtonClick)(UIButton *button);
 @interface UIButton (DYTools)
 /*
  * 为按钮添加点击事件
  */
-- (void)addClick:(ButtonClick)block;
+- (void)dy_addClick:(DY_ButtonClick)block;
 /*
  * 为按钮添加自定义事件
  */
-- (void)addAction:(ButtonClick)block action:(UIControlEvents)events;
+- (void)dy_addAction:(DY_ButtonClick)block action:(UIControlEvents)events;
 @end

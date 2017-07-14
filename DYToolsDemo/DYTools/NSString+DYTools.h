@@ -9,10 +9,10 @@
 /*
  * 追加字符串
  */
-- (NSString *)append:(NSString *)string;
+- (NSString *)dy_append:(NSString *)string;
 /*
  * 替换字符串
  * v1替换为v2
  */
-- (NSString *)replace:(NSString *)v1 v:(NSString *)v2;
+- (NSString *)dy_replace:(NSString *)v1 v:(NSString *)v2;
 @end
