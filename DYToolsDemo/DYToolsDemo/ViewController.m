@@ -21,6 +21,7 @@
     NSLog(@"append -> %@",[string dy_append:@"456"]);
     NSLog(@"replace -> %@", [string dy_replace:@"2" v:@"4"]);
     UIColor *hexColor = [UIColor dy_colorWithHexString:@""];
+    self.view.backgroundColor = hexColor;
 }
 
 @end
