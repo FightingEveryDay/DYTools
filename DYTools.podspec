@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/FightingEveryDay/DYTools.git", :tag => "#{s.version}" }
-  s.source_files  = 'DYTools', ‘DYTools/**/*.{h,m}’
+  s.source_files  = “DYTools”, ”DYTools/**/*.{h,m}”
   s.exclude_files = "DYToolsDemo"
   s.requires_arc = true
   # s.dependency "JSONKit", "~> 1.4"
