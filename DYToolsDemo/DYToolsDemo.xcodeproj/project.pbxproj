@@ -65,7 +65,8 @@
 				16BC5F041FBD9FFA00FA893A /* UIView+DYTools.h */,
 				16BC5F051FBD9FFA00FA893A /* UIView+DYTools.m */,
 			);
-			path = DYTools;
+			name = DYTools;
+			path = ../DYTools;
 			sourceTree = "<group>";
 		};
 		16EECE271F001C540017FF2F = {
