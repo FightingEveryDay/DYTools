@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author             = { "FightingEveryDay" => "wdy19921117@gmail.com" }
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/FightingEveryDay/DYTools.git", :tag => “0.1.0” }
+  s.source       = { :git => "https://github.com/FightingEveryDay/DYTools.git", :tag => s.version }
   s.source_files  = "DYTools", "DYTools/**/*.{h,m}"
   s.exclude_files = "DYToolsDemo"
   s.requires_arc = true
