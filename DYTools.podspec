@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DYTools"
-  s.version      = "0.0.1"
+  s.version      = “0.1.0”
   s.summary      = "Tools of iOS"
   s.description  = <<-DESC
 		      一组有用的工具集,用于iOS开发常用工具
