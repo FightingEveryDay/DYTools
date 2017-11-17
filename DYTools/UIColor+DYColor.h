@@ -5,6 +5,7 @@
 
 #import <UIKit/UIKit.h>
 
+#define DY_HEXCOLOR(string) [UIColor dy_colorWithHexString:string];
 @interface UIColor (DYColor)
 /**
  * hexColor方法
