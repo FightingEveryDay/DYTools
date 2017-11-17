@@ -17,6 +17,7 @@
 		16EECE3E1F001C540017FF2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE3C1F001C540017FF2F /* Main.storyboard */; };
 		16EECE401F001C540017FF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE3F1F001C540017FF2F /* Assets.xcassets */; };
 		16EECE431F001C540017FF2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE411F001C540017FF2F /* LaunchScreen.storyboard */; };
+		1CB4CD74D8D2A8AC687E8B9F /* UILabel+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C31A3AA609A3A73CD212 /* UILabel+DYTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		16EECE3F1F001C540017FF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16EECE421F001C540017FF2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16EECE441F001C540017FF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB4C126E9D6441A4E5715B1 /* UILabel+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DYTools.h"; sourceTree = "<group>"; };
+		1CB4C31A3AA609A3A73CD212 /* UILabel+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DYTools.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				16BC5F031FBD9FFA00FA893A /* UIColor+DYColor.m */,
 				16BC5F041FBD9FFA00FA893A /* UIView+DYTools.h */,
 				16BC5F051FBD9FFA00FA893A /* UIView+DYTools.m */,
+				1CB4C31A3AA609A3A73CD212 /* UILabel+DYTools.m */,
+				1CB4C126E9D6441A4E5715B1 /* UILabel+DYTools.h */,
 			);
 			name = DYTools;
 			path = ../DYTools;
@@ -189,6 +194,7 @@
 				16BC5F091FBD9FFA00FA893A /* UIView+DYTools.m in Sources */,
 				16BC5F061FBD9FFA00FA893A /* NSString+DYTools.m in Sources */,
 				16EECE351F001C540017FF2F /* main.m in Sources */,
+				1CB4CD74D8D2A8AC687E8B9F /* UILabel+DYTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
