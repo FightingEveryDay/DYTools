@@ -4,7 +4,7 @@
 //
 
 #import "DYTools.h"
-
+#import <UIKit/UIKit.h>
 
 @implementation DYTools
 
@@ -16,5 +16,4 @@
     });
     return obj;
 }
-
 @end

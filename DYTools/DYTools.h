@@ -5,11 +5,12 @@
 
 #import <Foundation/Foundation.h>
 
-
+@class UIImage;
 @interface DYTools : NSObject
 /**
  * 创建单例
  * @return 返回类对象
  */
 + (instancetype)share;
+
 @end

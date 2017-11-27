@@ -14,5 +14,6 @@
 #import "UIButton+DYTools.h"
 #import "UIColor+DYColor.h"
 #import "UILabel+DYTools.h"
+#import "UIImage+DYImage.h"
 
 #endif /* DYTool_h */
