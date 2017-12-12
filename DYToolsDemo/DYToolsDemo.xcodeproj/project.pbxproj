@@ -17,6 +17,7 @@
 		16EECE3E1F001C540017FF2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE3C1F001C540017FF2F /* Main.storyboard */; };
 		16EECE401F001C540017FF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE3F1F001C540017FF2F /* Assets.xcassets */; };
 		16EECE431F001C540017FF2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE411F001C540017FF2F /* LaunchScreen.storyboard */; };
+		1CB4C8A0B61EFE23374E14D8 /* UIImage+DYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4CBB3C767A59D930F684F /* UIImage+DYImage.m */; };
 		1CB4CD74D8D2A8AC687E8B9F /* UILabel+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C31A3AA609A3A73CD212 /* UILabel+DYTools.m */; };
 		1CB4CF8E544A6C16FAFD2E8F /* DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C765A3B071ED076BC905 /* DYTools.m */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,8 @@
 		1CB4C31A3AA609A3A73CD212 /* UILabel+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DYTools.m"; sourceTree = "<group>"; };
 		1CB4C6E6D17B6D5611381360 /* DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTools.h; sourceTree = "<group>"; };
 		1CB4C765A3B071ED076BC905 /* DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTools.m; sourceTree = "<group>"; };
+		1CB4CBB3C767A59D930F684F /* UIImage+DYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DYImage.m"; sourceTree = "<group>"; };
+		1CB4CCD69338F6E2761F84FB /* UIImage+DYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DYImage.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 				1CB4C126E9D6441A4E5715B1 /* UILabel+DYTools.h */,
 				1CB4C765A3B071ED076BC905 /* DYTools.m */,
 				1CB4C6E6D17B6D5611381360 /* DYTools.h */,
+				1CB4CBB3C767A59D930F684F /* UIImage+DYImage.m */,
+				1CB4CCD69338F6E2761F84FB /* UIImage+DYImage.h */,
 			);
 			name = DYTools;
 			path = ../DYTools;
@@ -201,6 +206,7 @@
 				16EECE351F001C540017FF2F /* main.m in Sources */,
 				1CB4CD74D8D2A8AC687E8B9F /* UILabel+DYTools.m in Sources */,
 				1CB4CF8E544A6C16FAFD2E8F /* DYTools.m in Sources */,
+				1CB4C8A0B61EFE23374E14D8 /* UIImage+DYImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
