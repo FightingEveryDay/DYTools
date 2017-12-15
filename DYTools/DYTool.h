@@ -15,5 +15,6 @@
 #import "UIColor+DYColor.h"
 #import "UILabel+DYTools.h"
 #import "UIImage+DYImage.h"
+#import "NSMutableAttributedString+DYTools.h"
 
 #endif /* DYTool_h */
