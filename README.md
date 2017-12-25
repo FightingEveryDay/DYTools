@@ -24,10 +24,9 @@ QQ群：553633494
 1. 简化封装NSMutableAttributedString富文本追加方法
 - 2017-12-15更新
 
-1. 替换所有NSLog输出为DYLog
-2. 增加正则判断方法
-3. 增加UUID的随机字符串的生成
-4. 增加NSDictionary转JSON字符串方法
+1. 增加正则判断方法
+2. 增加UUID的随机字符串的生成
+3. 增加NSDictionary转JSON字符串方法
 - 2017-12-25更新
 
 # 持续更新中,欢迎加入

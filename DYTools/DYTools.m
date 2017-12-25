@@ -111,7 +111,9 @@
                 if (granted) {
                     block([self getmyAddressbook]);
                 } else {
-                    DYLog(@"授权失败, error=%@", error);
+#if DEBUG
+                    NSLog(@"授权失败, error=%@", error);
+#endif
                     [self gotoSetting:nil];
                 }
             }];
@@ -127,18 +129,25 @@
             ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
                 if (!error) {
                     if (granted) {//允许
-                        DYLog(@"已授权访问通讯录");
+                        
+#if DEBUG
+                        NSLog(@"已授权访问通讯录");
+#endif
                         NSDictionary *contacts = [self fetchContactWithAddressBook:addressBook];
                         dispatch_async(dispatch_get_main_queue(), ^{
                             //----------------主线程 更新 UI-----------------
                             block(contacts);
                         });
                     }else{//拒绝
-                        DYLog(@"拒绝访问通讯录");
+#if DEBUG
+                         NSLog(@"拒绝访问通讯录");
+#endif
                         [self gotoSetting:nil];
                     }
                 }else{
-                    DYLog(@"发生错误!");
+#if DEBUG
+                    NSLog(@"发生错误!");
+#endif
                 }
             });
         }else{//非首次访问通讯录
@@ -171,7 +180,9 @@
         }
         return [contacts copy];
     }else{//无权限访问
-        DYLog(@"无权限访问通讯录");
+#if DEBUG
+        NSLog(@"无权限访问通讯录");
+#endif
         return nil;
     }
 }
@@ -180,7 +191,9 @@
     if (@available(iOS 9.0, *)) {
         CNAuthorizationStatus authorizationStatus = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
         if (authorizationStatus == CNAuthorizationStatusAuthorized) {
-            DYLog(@"没有授权...");
+#if DEBUG
+            NSLog(@"没有授权...");
+#endif
         }
         NSMutableDictionary *myDict = [NSMutableDictionary dictionary];
         // 获取指定的字段,并不是要获取所有字段，需要指定具体的字段
@@ -193,7 +206,7 @@
             for (CNLabeledValue *labelValue in phoneNumbers) {
                 //            NSString *label = labelValue.label;
                 CNPhoneNumber *phoneNumber = labelValue.value;
-                //            DYLog(@"label=%@, phone=%@", label, phoneNumber.stringValue);
+                //            NSLog(@"label=%@, phone=%@", label, phoneNumber.stringValue);
                 NSString *phoneNumberString = [phoneNumber.stringValue stringByReplacingOccurrencesOfString:@"+86" withString:@""];
                 phoneNumberString = [phoneNumberString stringByReplacingOccurrencesOfString:@"-" withString:@""];
                 phoneNumberString = [phoneNumberString stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -201,7 +214,9 @@
             }
             //*stop = YES; // 停止循环，相当于break；
         }];
-        DYLog(@"mydict is ==== %@",myDict);
+#if DEBUG
+        NSLog(@"mydict is ==== %@",myDict);
+#endif
         return [myDict copy];
     }
     return nil;

@@ -17,7 +17,9 @@
                                                        options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
                                                          error:&error];
     if (!jsonData) {
-        DYLog(@"Got an error: %@", error);
+#if DEBUG
+        NSLog(@"Got an error: %@", error);
+#endif
     } else {
         jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     }
