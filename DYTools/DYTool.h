@@ -9,6 +9,7 @@
 #ifndef DYTool_h
 #define DYTool_h
 
+#import "DYTools.h"
 #import "NSString+DYTools.h"
 #import "UIView+DYTools.h"
 #import "UIButton+DYTools.h"
@@ -16,5 +17,15 @@
 #import "UILabel+DYTools.h"
 #import "UIImage+DYImage.h"
 #import "NSMutableAttributedString+DYTools.h"
+#import "NSDictionary+DYDictionary.h"
+
+
+
+// 输出宏
+#ifdef DEBUG
+# define DYLog(fmt, ...) NSLog((@"\n********************************\n[File:%s]\n" "[Function:%s]\n" "[Line:%d] \nlog ==> ↓↓↓↓↓↓↓\n" fmt @"\n********************************"), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DYLog(...);
+#endif
 
 #endif /* DYTool_h */

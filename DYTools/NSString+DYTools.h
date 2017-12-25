@@ -15,4 +15,17 @@
  * v1替换为v2
  */
 - (NSString *)dy_replace:(NSString *)v1 v:(NSString *)v2;
+/**
+ 正则匹配
+
+ @param regex 正则表达式
+ @return 是否正确
+ */
+- (BOOL)dy_isValidateByRegex:(NSString *)regex;
+/**
+ 匹配11位手机号
+
+ @return 是否为手机号
+ */
+- (BOOL)dy_isValidPhoneNumber;
 @end

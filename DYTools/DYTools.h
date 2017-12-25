@@ -24,4 +24,10 @@
  @param block 通讯录name:number
  */
 + (void)dy_getAdressBook:(void(^)(NSDictionary *dict))block;
+/**
+ 生成一个uuid随机字符串(小写)
+
+ @return uuid字符串
+ */
++ (NSString *)dy_uuid;
 @end

@@ -111,7 +111,7 @@
                 if (granted) {
                     block([self getmyAddressbook]);
                 } else {
-                    NSLog(@"授权失败, error=%@", error);
+                    DYLog(@"授权失败, error=%@", error);
                     [self gotoSetting:nil];
                 }
             }];
@@ -127,18 +127,18 @@
             ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
                 if (!error) {
                     if (granted) {//允许
-                        NSLog(@"已授权访问通讯录");
+                        DYLog(@"已授权访问通讯录");
                         NSDictionary *contacts = [self fetchContactWithAddressBook:addressBook];
                         dispatch_async(dispatch_get_main_queue(), ^{
                             //----------------主线程 更新 UI-----------------
                             block(contacts);
                         });
                     }else{//拒绝
-                        NSLog(@"拒绝访问通讯录");
+                        DYLog(@"拒绝访问通讯录");
                         [self gotoSetting:nil];
                     }
                 }else{
-                    NSLog(@"发生错误!");
+                    DYLog(@"发生错误!");
                 }
             });
         }else{//非首次访问通讯录
@@ -162,7 +162,7 @@
             //获取联系人详细信息,如:姓名,电话,住址等信息
             NSString *firstName = (__bridge NSString *)ABRecordCopyValue(people, kABPersonFirstNameProperty);
             NSString *lastName = (__bridge NSString *)ABRecordCopyValue(people, kABPersonLastNameProperty);
-            ABMutableMultiValueRef *phoneNumRef = ABRecordCopyValue(people, kABPersonPhoneProperty);
+            ABMutableMultiValueRef phoneNumRef = ABRecordCopyValue(people, kABPersonPhoneProperty);
             NSString *phoneNumber =  ((__bridge NSArray *)ABMultiValueCopyArrayOfAllValues(phoneNumRef)).lastObject;
             phoneNumber = [phoneNumber stringByReplacingOccurrencesOfString:@"+86" withString:@""];
             phoneNumber = [phoneNumber stringByReplacingOccurrencesOfString:@"-" withString:@""];
@@ -171,7 +171,7 @@
         }
         return [contacts copy];
     }else{//无权限访问
-        NSLog(@"无权限访问通讯录");
+        DYLog(@"无权限访问通讯录");
         return nil;
     }
 }
@@ -180,7 +180,7 @@
     if (@available(iOS 9.0, *)) {
         CNAuthorizationStatus authorizationStatus = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
         if (authorizationStatus == CNAuthorizationStatusAuthorized) {
-            NSLog(@"没有授权...");
+            DYLog(@"没有授权...");
         }
         NSMutableDictionary *myDict = [NSMutableDictionary dictionary];
         // 获取指定的字段,并不是要获取所有字段，需要指定具体的字段
@@ -193,7 +193,7 @@
             for (CNLabeledValue *labelValue in phoneNumbers) {
                 //            NSString *label = labelValue.label;
                 CNPhoneNumber *phoneNumber = labelValue.value;
-                //            NSLog(@"label=%@, phone=%@", label, phoneNumber.stringValue);
+                //            DYLog(@"label=%@, phone=%@", label, phoneNumber.stringValue);
                 NSString *phoneNumberString = [phoneNumber.stringValue stringByReplacingOccurrencesOfString:@"+86" withString:@""];
                 phoneNumberString = [phoneNumberString stringByReplacingOccurrencesOfString:@"-" withString:@""];
                 phoneNumberString = [phoneNumberString stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -201,7 +201,7 @@
             }
             //*stop = YES; // 停止循环，相当于break；
         }];
-        NSLog(@"mydict is ==== %@",myDict);
+        DYLog(@"mydict is ==== %@",myDict);
         return [myDict copy];
     }
     return nil;
@@ -223,5 +223,13 @@
     [alertVC addAction:cancleAction];
     [alertVC addAction:sureAction];
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertVC animated:YES completion:nil];
+}
++ (NSString *)dy_uuid {
+    CFUUIDRef uuid_ref = CFUUIDCreate(NULL);
+    CFStringRef uuid_string_ref = CFUUIDCreateString(NULL, uuid_ref);
+    NSString *uuid = [NSString stringWithString:(__bridge NSString *)uuid_string_ref];
+    CFRelease(uuid_ref);
+    CFRelease(uuid_string_ref);
+    return [uuid lowercaseString];
 }
 @end
