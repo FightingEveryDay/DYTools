@@ -21,6 +21,7 @@ static char ViewClickBlock;
     return [self dy_findView:self Clazz:clazz];
 }
 - (void)dy_addClick:(DY_ViewClick)block {
+    self.userInteractionEnabled = YES;
     objc_setAssociatedObject(self, &ViewClickBlock, block, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewClick:)];
     [self addGestureRecognizer:tap];

@@ -18,6 +18,8 @@
 #import "UIImage+DYImage.h"
 #import "NSMutableAttributedString+DYTools.h"
 #import "NSDictionary+DYDictionary.h"
+#import "UITextField+DYTextField.h"
+#import "NSDate+DYDate.h"
 
 
 #endif /* DYTool_h */

@@ -30,4 +30,21 @@
  @return uuid字符串
  */
 + (NSString *)dy_uuid;
+/**
+ 获取缓存
+
+ @return 缓存大小 单位MB
+ */
++ (CGFloat)dy_getCache;
+/**
+ 获取某一路经下的文件大小
+
+ @param folderPath 文件路径
+ @return 缓存大小 单位MB
+ */
++ (CGFloat)folderSizeAtPath:(NSString *)folderPath;
+/**
+ 清楚缓存
+ */
++ (void)dy_clearFile;
 @end

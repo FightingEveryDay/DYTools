@@ -16,4 +16,11 @@
  @return JSON字符串
  */
 - (NSString *)dy_toJSSON;
+/**
+ 预防取出空值导致程序崩溃
+
+ @param key key
+ @return id
+ */
+- (id)dy_objectForKey:(NSString *)key;
 @end

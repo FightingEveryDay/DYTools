@@ -25,4 +25,11 @@
     }
     return jsonString;
 }
+- (id)dy_objectForKey:(NSString *)key {
+    
+    if ([self.allKeys containsObject:key]) {
+        return [self valueForKey:key];
+    }
+    return @"";
+}
 @end
