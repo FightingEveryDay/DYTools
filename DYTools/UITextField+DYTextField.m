@@ -11,11 +11,16 @@
 @implementation UITextField (DYTextField)
 
 - (void)dy_setPlaceholderLeftPadding:(CGFloat)padding {
-    NSAssert(padding, @"间距不能为空");
+    if (!padding) padding = 1.f;
     CGRect frame = [self frame];
     frame.size.width = padding;
     [self setLeftView:[[UIView alloc]initWithFrame:frame]];
     [self setLeftViewMode:UITextFieldViewModeAlways];
+}
+
+- (void)dy_setPlaceholderFont:(UIFont *)font {
+    
+    [self setValue:font forKeyPath:@"_placeholderLabel.font"];
 }
 
 @end

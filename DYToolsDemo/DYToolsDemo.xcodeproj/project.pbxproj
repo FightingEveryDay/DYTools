@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		165A09C42109A4100055C05E /* UIView+DYLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DYLayout.h"; sourceTree = "<group>"; };
 		16BC5EFD1FBD9FFA00FA893A /* DYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTool.h; sourceTree = "<group>"; };
 		16BC5EFE1FBD9FFA00FA893A /* NSString+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DYTools.h"; sourceTree = "<group>"; };
 		16BC5EFF1FBD9FFA00FA893A /* NSString+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DYTools.m"; sourceTree = "<group>"; };
@@ -73,12 +74,13 @@
 				16BC5F031FBD9FFA00FA893A /* UIColor+DYColor.m */,
 				16BC5F041FBD9FFA00FA893A /* UIView+DYTools.h */,
 				16BC5F051FBD9FFA00FA893A /* UIView+DYTools.m */,
-				1CB4C31A3AA609A3A73CD212 /* UILabel+DYTools.m */,
 				1CB4C126E9D6441A4E5715B1 /* UILabel+DYTools.h */,
-				1CB4C765A3B071ED076BC905 /* DYTools.m */,
+				1CB4C31A3AA609A3A73CD212 /* UILabel+DYTools.m */,
 				1CB4C6E6D17B6D5611381360 /* DYTools.h */,
-				1CB4CBB3C767A59D930F684F /* UIImage+DYImage.m */,
+				1CB4C765A3B071ED076BC905 /* DYTools.m */,
 				1CB4CCD69338F6E2761F84FB /* UIImage+DYImage.h */,
+				1CB4CBB3C767A59D930F684F /* UIImage+DYImage.m */,
+				165A09C42109A4100055C05E /* UIView+DYLayout.h */,
 			);
 			name = DYTools;
 			path = ../DYTools;
@@ -342,6 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K4GUQANRV3;
 				INFOPLIST_FILE = DYToolsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wdy.DYToolsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K4GUQANRV3;
 				INFOPLIST_FILE = DYToolsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wdy.DYToolsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

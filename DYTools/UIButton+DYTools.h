@@ -5,6 +5,13 @@
 
 #import <UIKit/UIKit.h>
 typedef void(^DY_ButtonClick)(UIButton *button);
+
+typedef NS_ENUM(NSUInteger, DYButtonPositionType) {
+    DYButtonImageTopTextBottom,    //图上文下
+    DYButtonImageBottomTextTop,    //图下文上
+    DYButtonImageLeftTextRight,    //图左文右
+    DYButtonImageRightTextLeft     //图右文左
+};
 @interface UIButton (DYTools)
 /*
  * 为按钮添加点击事件
@@ -30,4 +37,17 @@ typedef void(^DY_ButtonClick)(UIButton *button);
  @param title 结束后标题
  */
 - (void)dy_closeCountDownWithTitle:(NSString *)title;
+/**
+ 按钮的图文排列顺序
+
+ @param type 枚举值
+ */
+- (void)dy_buttonImageTextPositionType:(DYButtonPositionType)type;
+/**
+ 按钮的图文排列顺序
+
+ @param type 枚举值
+ @param space 图文间距,默认为5
+ */
+- (void)dy_buttonImageTextPositionType:(DYButtonPositionType)type imageTitleSpace:(CGFloat)space;
 @end

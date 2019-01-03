@@ -5,6 +5,7 @@
 
 #import <UIKit/UIKit.h>
 typedef void(^DY_ViewClick)(UIView *view);
+typedef void(^DY_ViewClick_Action)(UIView *view, UIGestureRecognizer *gesture);
 @interface UIView (DYTools)
 /**
  寻找对应类的视图
@@ -21,9 +22,17 @@ typedef void(^DY_ViewClick)(UIView *view);
  */
 - (UIView *)dy_findView:(UIView *)view Clazz:(Class)clazz;
 /**
- 增加view的点击事件
+ 寻找指定父视图
+
+ @param clazz 父视图类
+ @return 找到的父视图,没有为nil
+ */
+- (UIView *)dy_findSuperViewWithClazz:(Class)clazz;
+/**
+ 增加view的点击事件 (下面两个方法只能择其一选择)
 
  @param block view点击事件的回调
  */
 - (void)dy_addClick:(DY_ViewClick)block;
+- (void)dy_addClickWithAction:(DY_ViewClick_Action)block;
 @end

@@ -3,7 +3,7 @@
 // Copyright (c) 2017 wdy. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @class UIImage;
 @interface DYTools : NSObject
@@ -23,7 +23,7 @@
 
  @param block 通讯录name:number
  */
-+ (void)dy_getAdressBook:(void(^)(NSDictionary *dict))block;
+//+ (void)dy_getAdressBook:(void(^)(NSDictionary *dict))block;
 /**
  生成一个uuid随机字符串(小写)
 

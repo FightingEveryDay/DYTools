@@ -26,9 +26,8 @@
     return jsonString;
 }
 - (id)dy_objectForKey:(NSString *)key {
-    
-    if ([self.allKeys containsObject:key]) {
-        return [self valueForKey:key];
+    if ([self isKindOfClass:[NSDictionary class]] && [self.allKeys containsObject:key]) {
+        return [self objectForKey:key];
     }
     return @"";
 }

@@ -3,7 +3,7 @@
 // Copyright (c) 2017 wdy. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "UIKit/UIKit.h"
 
 @interface NSString (DYTools)
 /*
@@ -28,4 +28,24 @@
  @return 是否为手机号
  */
 - (BOOL)dy_isValidPhoneNumber;
+/**
+ 获取字符串高度
+
+ @param size 字符串宽高
+ @param font 字体
+ @return 高度
+ */
+- (CGFloat)dy_getStringHeightWithSize:(CGSize)size font:(UIFont *)font;
+/**
+ 删除空格符
+
+ @return 删除空格符后的字符
+ */
+- (NSString *)dy_deleteSpace;
+/**
+ string转为金额,默认保留2为小数
+
+ @return 金额字符串
+ */
+- (NSString *)dy_stringToDecimalNumber;
 @end

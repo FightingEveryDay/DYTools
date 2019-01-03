@@ -23,7 +23,7 @@
     UIColor *hexColor = [UIColor dy_colorWithHexString:@""];
     self.view.backgroundColor = hexColor;
     self.view.backgroundColor = DY_HEXCOLOR(@"ffffff");
-    [UIImage dy_compressImageToData:nil Byte:nil];
+    
 }
 
 @end

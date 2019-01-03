@@ -26,10 +26,30 @@ static char ViewClickBlock;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewClick:)];
     [self addGestureRecognizer:tap];
 }
+- (void)dy_addClickWithAction:(DY_ViewClick_Action)block {
+    self.userInteractionEnabled = YES;
+    objc_setAssociatedObject(self, &ViewClickBlock, block, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewClickWithAction:)];
+    [self addGestureRecognizer:tap];
+}
+- (UIView *)dy_findSuperViewWithClazz:(Class)clazz {
+    UIView *superView = self.superview;
+    if ([superView isKindOfClass:clazz]) {
+        return superView;
+    }else {
+        return [superView dy_findSuperViewWithClazz:clazz];
+    }
+}
 - (void)viewClick:(UITapGestureRecognizer *)tap {
     DY_ViewClick block = objc_getAssociatedObject(self, &ViewClickBlock);
-    NSAssert(block, @"block 不能为空");
-    block(self);
-    block = nil;
+    if (block) {
+        block(self);
+    }
+}
+- (void)viewClickWithAction:(UIGestureRecognizer *)tap {
+    DY_ViewClick_Action block = objc_getAssociatedObject(self, &ViewClickBlock);
+    if (block) {
+        block(self, tap);
+    }
 }
 @end
