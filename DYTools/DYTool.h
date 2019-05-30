@@ -20,6 +20,8 @@
 #import "NSDictionary+DYDictionary.h"
 #import "UITextField+DYTextField.h"
 #import "NSDate+DYDate.h"
+#import "UITextView+DYTextView.h"
+#import "UIViewController+DYController.h"
 
 
 #endif /* DYTool_h */

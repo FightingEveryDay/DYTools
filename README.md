@@ -44,7 +44,7 @@ QQ群：553633494
 4. 增加字典安全取值方法
 5. 修改UIView增加点击手势方法
 
-### - 更新
+### - 2019-05-30更新
 1. 简化字符串和富文本字符串的高度获取
 2. 增加UIButton的排列方向(增加4种方向)
 	- DYButtonImageTopTextBottom:图上文下
@@ -57,5 +57,8 @@ QQ群：553633494
 	- 增加时间计算,类似活动秒杀,返回NSDateComponents对象
 	- 增加返回到指定时间的秒数
 5. 增加NSString(金额类型)的精度计算(默认保留2位小数)
+6. 增加图片压缩到指定size
+7. UITextView添加placeholder属性
+8. 增加rootViewController切换方法
 
 # 持续更新中,欢迎加入

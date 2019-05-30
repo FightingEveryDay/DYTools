@@ -41,7 +41,7 @@
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSDate *date = [dateFormatter dateFromString:str];
     if (!date) {
-        date = [dateFormatter dateFromString:[str dy_append:@":00"]];
+        date = [dateFormatter dateFromString:[str stringByAppendingString:@":00"]];
     }
     return date;
 }

@@ -44,7 +44,7 @@
  */
 + (CGFloat)folderSizeAtPath:(NSString *)folderPath;
 /**
- 清楚缓存
+ 清除缓存
  */
 + (void)dy_clearFile;
 @end

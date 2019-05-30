@@ -46,4 +46,9 @@
 
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
 }
+
++ (UIColor *)dy_alphaHexColor:(NSString *)hexColor alpha:(CGFloat)alpha {
+    UIColor *color = [self dy_colorWithHexString:hexColor];
+    return [color colorWithAlphaComponent:alpha];
+}
 @end

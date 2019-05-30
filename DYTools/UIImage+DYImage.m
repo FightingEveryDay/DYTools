@@ -40,6 +40,15 @@ static const void *minH = &minH;
 + (UIImage *)dy_compressImageToImage:(UIImage *)image Byte:(NSUInteger)maxLength {
     return [UIImage imageWithData:[self dy_compressImageToData:image Byte:maxLength]];
 }
++ (UIImage *)dy_compressSourceImage:(UIImage *)image size:(CGSize)size {
+    CGFloat scale = [[UIScreen mainScreen] scale];
+    //UIGraphicsBeginImageContext(newSize);
+    UIGraphicsBeginImageContextWithOptions(size, NO, scale);
+    [image drawInRect:CGRectMake(0,0,size.width,size.height)];
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
 - (UIImage *)dy_imageWithColor:(UIColor *)color {
     return [self dy_imageWithColor:color scale:1];
 }

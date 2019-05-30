@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16728286229FD47C006FC25D /* UIViewController+DYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16728285229FD47C006FC25D /* UIViewController+DYController.m */; };
 		16BC5F061FBD9FFA00FA893A /* NSString+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC5EFF1FBD9FFA00FA893A /* NSString+DYTools.m */; };
 		16BC5F071FBD9FFA00FA893A /* UIButton+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC5F011FBD9FFA00FA893A /* UIButton+DYTools.m */; };
 		16BC5F081FBD9FFA00FA893A /* UIColor+DYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC5F031FBD9FFA00FA893A /* UIColor+DYColor.m */; };
@@ -23,7 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		165A09C42109A4100055C05E /* UIView+DYLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DYLayout.h"; sourceTree = "<group>"; };
+		16728284229FD47C006FC25D /* UIViewController+DYController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DYController.h"; sourceTree = "<group>"; };
+		16728285229FD47C006FC25D /* UIViewController+DYController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DYController.m"; sourceTree = "<group>"; };
 		16BC5EFD1FBD9FFA00FA893A /* DYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTool.h; sourceTree = "<group>"; };
 		16BC5EFE1FBD9FFA00FA893A /* NSString+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DYTools.h"; sourceTree = "<group>"; };
 		16BC5EFF1FBD9FFA00FA893A /* NSString+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DYTools.m"; sourceTree = "<group>"; };
@@ -80,7 +82,8 @@
 				1CB4C765A3B071ED076BC905 /* DYTools.m */,
 				1CB4CCD69338F6E2761F84FB /* UIImage+DYImage.h */,
 				1CB4CBB3C767A59D930F684F /* UIImage+DYImage.m */,
-				165A09C42109A4100055C05E /* UIView+DYLayout.h */,
+				16728284229FD47C006FC25D /* UIViewController+DYController.h */,
+				16728285229FD47C006FC25D /* UIViewController+DYController.m */,
 			);
 			name = DYTools;
 			path = ../DYTools;
@@ -168,6 +171,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -202,6 +206,7 @@
 				16BC5F081FBD9FFA00FA893A /* UIColor+DYColor.m in Sources */,
 				16BC5F071FBD9FFA00FA893A /* UIButton+DYTools.m in Sources */,
 				16EECE3B1F001C540017FF2F /* ViewController.m in Sources */,
+				16728286229FD47C006FC25D /* UIViewController+DYController.m in Sources */,
 				16EECE381F001C540017FF2F /* AppDelegate.m in Sources */,
 				16BC5F091FBD9FFA00FA893A /* UIView+DYTools.m in Sources */,
 				16BC5F061FBD9FFA00FA893A /* NSString+DYTools.m in Sources */,
