@@ -7,34 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16728286229FD47C006FC25D /* UIViewController+DYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16728285229FD47C006FC25D /* UIViewController+DYController.m */; };
-		16BC5F061FBD9FFA00FA893A /* NSString+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC5EFF1FBD9FFA00FA893A /* NSString+DYTools.m */; };
-		16BC5F071FBD9FFA00FA893A /* UIButton+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC5F011FBD9FFA00FA893A /* UIButton+DYTools.m */; };
-		16BC5F081FBD9FFA00FA893A /* UIColor+DYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC5F031FBD9FFA00FA893A /* UIColor+DYColor.m */; };
-		16BC5F091FBD9FFA00FA893A /* UIView+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC5F051FBD9FFA00FA893A /* UIView+DYTools.m */; };
+		167282CE22A0C6FE006FC25D /* NSDictionary+DYDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282B322A0C6FC006FC25D /* NSDictionary+DYDictionary.m */; };
+		167282CF22A0C6FE006FC25D /* UIColor+DYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282B522A0C6FC006FC25D /* UIColor+DYColor.m */; };
+		167282D022A0C6FE006FC25D /* DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282B622A0C6FC006FC25D /* DYTools.m */; };
+		167282D122A0C6FE006FC25D /* UIButton+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282BA22A0C6FC006FC25D /* UIButton+DYTools.m */; };
+		167282D222A0C6FE006FC25D /* UIView+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282BB22A0C6FD006FC25D /* UIView+DYTools.m */; };
+		167282D322A0C6FE006FC25D /* UIImage+DYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282BE22A0C6FD006FC25D /* UIImage+DYImage.m */; };
+		167282D422A0C6FE006FC25D /* NSMutableAttributedString+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282BF22A0C6FD006FC25D /* NSMutableAttributedString+DYTools.m */; };
+		167282D522A0C6FE006FC25D /* UIViewController+DYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282C122A0C6FD006FC25D /* UIViewController+DYController.m */; };
+		167282D622A0C6FE006FC25D /* UILabel+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282C322A0C6FD006FC25D /* UILabel+DYTools.m */; };
+		167282D722A0C6FE006FC25D /* NSString+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282C422A0C6FD006FC25D /* NSString+DYTools.m */; };
+		167282D822A0C6FE006FC25D /* UITextField+DYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282C522A0C6FD006FC25D /* UITextField+DYTextField.m */; };
+		167282D922A0C6FE006FC25D /* UITextView+DYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282C722A0C6FD006FC25D /* UITextView+DYTextView.m */; };
+		167282DA22A0C6FE006FC25D /* NSDate+DYDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 167282CA22A0C6FD006FC25D /* NSDate+DYDate.m */; };
 		16EECE351F001C540017FF2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE341F001C540017FF2F /* main.m */; };
 		16EECE381F001C540017FF2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE371F001C540017FF2F /* AppDelegate.m */; };
 		16EECE3B1F001C540017FF2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE3A1F001C540017FF2F /* ViewController.m */; };
 		16EECE3E1F001C540017FF2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE3C1F001C540017FF2F /* Main.storyboard */; };
 		16EECE401F001C540017FF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE3F1F001C540017FF2F /* Assets.xcassets */; };
 		16EECE431F001C540017FF2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE411F001C540017FF2F /* LaunchScreen.storyboard */; };
-		1CB4C8A0B61EFE23374E14D8 /* UIImage+DYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4CBB3C767A59D930F684F /* UIImage+DYImage.m */; };
-		1CB4CD74D8D2A8AC687E8B9F /* UILabel+DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C31A3AA609A3A73CD212 /* UILabel+DYTools.m */; };
-		1CB4CF8E544A6C16FAFD2E8F /* DYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C765A3B071ED076BC905 /* DYTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16728284229FD47C006FC25D /* UIViewController+DYController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DYController.h"; sourceTree = "<group>"; };
-		16728285229FD47C006FC25D /* UIViewController+DYController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DYController.m"; sourceTree = "<group>"; };
-		16BC5EFD1FBD9FFA00FA893A /* DYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTool.h; sourceTree = "<group>"; };
-		16BC5EFE1FBD9FFA00FA893A /* NSString+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DYTools.h"; sourceTree = "<group>"; };
-		16BC5EFF1FBD9FFA00FA893A /* NSString+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DYTools.m"; sourceTree = "<group>"; };
-		16BC5F001FBD9FFA00FA893A /* UIButton+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DYTools.h"; sourceTree = "<group>"; };
-		16BC5F011FBD9FFA00FA893A /* UIButton+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DYTools.m"; sourceTree = "<group>"; };
-		16BC5F021FBD9FFA00FA893A /* UIColor+DYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DYColor.h"; sourceTree = "<group>"; };
-		16BC5F031FBD9FFA00FA893A /* UIColor+DYColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DYColor.m"; sourceTree = "<group>"; };
-		16BC5F041FBD9FFA00FA893A /* UIView+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DYTools.h"; sourceTree = "<group>"; };
-		16BC5F051FBD9FFA00FA893A /* UIView+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DYTools.m"; sourceTree = "<group>"; };
+		167282B322A0C6FC006FC25D /* NSDictionary+DYDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DYDictionary.m"; sourceTree = "<group>"; };
+		167282B422A0C6FC006FC25D /* NSMutableAttributedString+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+DYTools.h"; sourceTree = "<group>"; };
+		167282B522A0C6FC006FC25D /* UIColor+DYColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DYColor.m"; sourceTree = "<group>"; };
+		167282B622A0C6FC006FC25D /* DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTools.m; sourceTree = "<group>"; };
+		167282B722A0C6FC006FC25D /* NSDate+DYDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DYDate.h"; sourceTree = "<group>"; };
+		167282B822A0C6FC006FC25D /* UILabel+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DYTools.h"; sourceTree = "<group>"; };
+		167282B922A0C6FC006FC25D /* UIImage+DYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DYImage.h"; sourceTree = "<group>"; };
+		167282BA22A0C6FC006FC25D /* UIButton+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DYTools.m"; sourceTree = "<group>"; };
+		167282BB22A0C6FD006FC25D /* UIView+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DYTools.m"; sourceTree = "<group>"; };
+		167282BC22A0C6FD006FC25D /* UIViewController+DYController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DYController.h"; sourceTree = "<group>"; };
+		167282BD22A0C6FD006FC25D /* NSString+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DYTools.h"; sourceTree = "<group>"; };
+		167282BE22A0C6FD006FC25D /* UIImage+DYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DYImage.m"; sourceTree = "<group>"; };
+		167282BF22A0C6FD006FC25D /* NSMutableAttributedString+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+DYTools.m"; sourceTree = "<group>"; };
+		167282C022A0C6FD006FC25D /* DYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTool.h; sourceTree = "<group>"; };
+		167282C122A0C6FD006FC25D /* UIViewController+DYController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DYController.m"; sourceTree = "<group>"; };
+		167282C222A0C6FD006FC25D /* UITextView+DYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+DYTextView.h"; sourceTree = "<group>"; };
+		167282C322A0C6FD006FC25D /* UILabel+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DYTools.m"; sourceTree = "<group>"; };
+		167282C422A0C6FD006FC25D /* NSString+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DYTools.m"; sourceTree = "<group>"; };
+		167282C522A0C6FD006FC25D /* UITextField+DYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DYTextField.m"; sourceTree = "<group>"; };
+		167282C622A0C6FD006FC25D /* NSDictionary+DYDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DYDictionary.h"; sourceTree = "<group>"; };
+		167282C722A0C6FD006FC25D /* UITextView+DYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+DYTextView.m"; sourceTree = "<group>"; };
+		167282C822A0C6FD006FC25D /* UITextField+DYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DYTextField.h"; sourceTree = "<group>"; };
+		167282C922A0C6FD006FC25D /* UIView+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DYTools.h"; sourceTree = "<group>"; };
+		167282CA22A0C6FD006FC25D /* NSDate+DYDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DYDate.m"; sourceTree = "<group>"; };
+		167282CB22A0C6FE006FC25D /* DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTools.h; sourceTree = "<group>"; };
+		167282CC22A0C6FE006FC25D /* UIButton+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DYTools.h"; sourceTree = "<group>"; };
+		167282CD22A0C6FE006FC25D /* UIColor+DYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DYColor.h"; sourceTree = "<group>"; };
 		16EECE301F001C540017FF2F /* DYToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EECE341F001C540017FF2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16EECE361F001C540017FF2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,12 +66,6 @@
 		16EECE3F1F001C540017FF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16EECE421F001C540017FF2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16EECE441F001C540017FF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CB4C126E9D6441A4E5715B1 /* UILabel+DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DYTools.h"; sourceTree = "<group>"; };
-		1CB4C31A3AA609A3A73CD212 /* UILabel+DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DYTools.m"; sourceTree = "<group>"; };
-		1CB4C6E6D17B6D5611381360 /* DYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTools.h; sourceTree = "<group>"; };
-		1CB4C765A3B071ED076BC905 /* DYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTools.m; sourceTree = "<group>"; };
-		1CB4CBB3C767A59D930F684F /* UIImage+DYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DYImage.m"; sourceTree = "<group>"; };
-		1CB4CCD69338F6E2761F84FB /* UIImage+DYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DYImage.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,35 +79,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16BC5EFC1FBD9FFA00FA893A /* DYTools */ = {
+		1672828A22A0C6BA006FC25D /* DYTools */ = {
 			isa = PBXGroup;
 			children = (
-				16BC5EFD1FBD9FFA00FA893A /* DYTool.h */,
-				16BC5EFE1FBD9FFA00FA893A /* NSString+DYTools.h */,
-				16BC5EFF1FBD9FFA00FA893A /* NSString+DYTools.m */,
-				16BC5F001FBD9FFA00FA893A /* UIButton+DYTools.h */,
-				16BC5F011FBD9FFA00FA893A /* UIButton+DYTools.m */,
-				16BC5F021FBD9FFA00FA893A /* UIColor+DYColor.h */,
-				16BC5F031FBD9FFA00FA893A /* UIColor+DYColor.m */,
-				16BC5F041FBD9FFA00FA893A /* UIView+DYTools.h */,
-				16BC5F051FBD9FFA00FA893A /* UIView+DYTools.m */,
-				1CB4C126E9D6441A4E5715B1 /* UILabel+DYTools.h */,
-				1CB4C31A3AA609A3A73CD212 /* UILabel+DYTools.m */,
-				1CB4C6E6D17B6D5611381360 /* DYTools.h */,
-				1CB4C765A3B071ED076BC905 /* DYTools.m */,
-				1CB4CCD69338F6E2761F84FB /* UIImage+DYImage.h */,
-				1CB4CBB3C767A59D930F684F /* UIImage+DYImage.m */,
-				16728284229FD47C006FC25D /* UIViewController+DYController.h */,
-				16728285229FD47C006FC25D /* UIViewController+DYController.m */,
+				167282C022A0C6FD006FC25D /* DYTool.h */,
+				167282CB22A0C6FE006FC25D /* DYTools.h */,
+				167282B622A0C6FC006FC25D /* DYTools.m */,
+				167282B722A0C6FC006FC25D /* NSDate+DYDate.h */,
+				167282CA22A0C6FD006FC25D /* NSDate+DYDate.m */,
+				167282C622A0C6FD006FC25D /* NSDictionary+DYDictionary.h */,
+				167282B322A0C6FC006FC25D /* NSDictionary+DYDictionary.m */,
+				167282B422A0C6FC006FC25D /* NSMutableAttributedString+DYTools.h */,
+				167282BF22A0C6FD006FC25D /* NSMutableAttributedString+DYTools.m */,
+				167282BD22A0C6FD006FC25D /* NSString+DYTools.h */,
+				167282C422A0C6FD006FC25D /* NSString+DYTools.m */,
+				167282CC22A0C6FE006FC25D /* UIButton+DYTools.h */,
+				167282BA22A0C6FC006FC25D /* UIButton+DYTools.m */,
+				167282CD22A0C6FE006FC25D /* UIColor+DYColor.h */,
+				167282B522A0C6FC006FC25D /* UIColor+DYColor.m */,
+				167282B922A0C6FC006FC25D /* UIImage+DYImage.h */,
+				167282BE22A0C6FD006FC25D /* UIImage+DYImage.m */,
+				167282B822A0C6FC006FC25D /* UILabel+DYTools.h */,
+				167282C322A0C6FD006FC25D /* UILabel+DYTools.m */,
+				167282C822A0C6FD006FC25D /* UITextField+DYTextField.h */,
+				167282C522A0C6FD006FC25D /* UITextField+DYTextField.m */,
+				167282C222A0C6FD006FC25D /* UITextView+DYTextView.h */,
+				167282C722A0C6FD006FC25D /* UITextView+DYTextView.m */,
+				167282C922A0C6FD006FC25D /* UIView+DYTools.h */,
+				167282BB22A0C6FD006FC25D /* UIView+DYTools.m */,
+				167282BC22A0C6FD006FC25D /* UIViewController+DYController.h */,
+				167282C122A0C6FD006FC25D /* UIViewController+DYController.m */,
 			);
-			name = DYTools;
-			path = ../DYTools;
+			path = DYTools;
 			sourceTree = "<group>";
 		};
 		16EECE271F001C540017FF2F = {
 			isa = PBXGroup;
 			children = (
-				16BC5EFC1FBD9FFA00FA893A /* DYTools */,
+				1672828A22A0C6BA006FC25D /* DYTools */,
 				16EECE321F001C540017FF2F /* DYToolsDemo */,
 				16EECE311F001C540017FF2F /* Products */,
 			);
@@ -203,17 +227,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16BC5F081FBD9FFA00FA893A /* UIColor+DYColor.m in Sources */,
-				16BC5F071FBD9FFA00FA893A /* UIButton+DYTools.m in Sources */,
+				167282D322A0C6FE006FC25D /* UIImage+DYImage.m in Sources */,
+				167282D022A0C6FE006FC25D /* DYTools.m in Sources */,
 				16EECE3B1F001C540017FF2F /* ViewController.m in Sources */,
-				16728286229FD47C006FC25D /* UIViewController+DYController.m in Sources */,
+				167282D522A0C6FE006FC25D /* UIViewController+DYController.m in Sources */,
+				167282D822A0C6FE006FC25D /* UITextField+DYTextField.m in Sources */,
+				167282CF22A0C6FE006FC25D /* UIColor+DYColor.m in Sources */,
 				16EECE381F001C540017FF2F /* AppDelegate.m in Sources */,
-				16BC5F091FBD9FFA00FA893A /* UIView+DYTools.m in Sources */,
-				16BC5F061FBD9FFA00FA893A /* NSString+DYTools.m in Sources */,
 				16EECE351F001C540017FF2F /* main.m in Sources */,
-				1CB4CD74D8D2A8AC687E8B9F /* UILabel+DYTools.m in Sources */,
-				1CB4CF8E544A6C16FAFD2E8F /* DYTools.m in Sources */,
-				1CB4C8A0B61EFE23374E14D8 /* UIImage+DYImage.m in Sources */,
+				167282D622A0C6FE006FC25D /* UILabel+DYTools.m in Sources */,
+				167282D222A0C6FE006FC25D /* UIView+DYTools.m in Sources */,
+				167282D422A0C6FE006FC25D /* NSMutableAttributedString+DYTools.m in Sources */,
+				167282CE22A0C6FE006FC25D /* NSDictionary+DYDictionary.m in Sources */,
+				167282D122A0C6FE006FC25D /* UIButton+DYTools.m in Sources */,
+				167282D922A0C6FE006FC25D /* UITextView+DYTextView.m in Sources */,
+				167282D722A0C6FE006FC25D /* NSString+DYTools.m in Sources */,
+				167282DA22A0C6FE006FC25D /* NSDate+DYDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
