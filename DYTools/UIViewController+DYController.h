@@ -14,7 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)dy_changeRootViewController:(UIViewController *)vc;
 
-- (void)dy_changeRootViewController:(UIViewController *)vc style:(UIViewAnimationOptions)style;
+- (void)dy_changeRootViewController:(UIViewController *)vc style:(UIViewAnimationOptions)style completion:(void (^ __nullable)(BOOL finished))completion;
+
+- (BOOL)dy_isMobileNumber:(NSString *)mobileNum;
 
 @end
 

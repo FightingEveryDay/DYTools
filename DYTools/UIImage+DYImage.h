@@ -37,6 +37,13 @@
  */
 + (UIImage *)dy_compressSourceImage:(UIImage *)image size:(CGSize)size;
 /**
+ 压缩图片到指定大小
+ 
+ @param size 指定大小
+ @return 压缩过的图片
+ */
+- (UIImage *)dy_compressImageWithSize:(CGSize)size;
+/**
  修改图片的填充颜色
 
  @param color 图片填充新颜色

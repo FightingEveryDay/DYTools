@@ -49,6 +49,9 @@ static const void *minH = &minH;
     UIGraphicsEndImageContext();
     return newImage;
 }
+- (UIImage *)dy_compressImageWithSize:(CGSize)size {
+    return [UIImage dy_compressSourceImage:self size:size];
+}
 - (UIImage *)dy_imageWithColor:(UIColor *)color {
     return [self dy_imageWithColor:color scale:1];
 }
